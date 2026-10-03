@@ -1,0 +1,108 @@
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 02:58:38
+Attack Type     : BRUTE FORCE
+Source IP       : 127.0.0.1
+Username        : admin
+Failed Attempts : 13
+Severity        : HIGH
+Recommended     : Investigate source IP and consider account/IP rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 02:58:38
+Attack Type     : PASSWORD SPRAY
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 6
+Severity        : HIGH
+Recommended     : Investigate targeted accounts and consider MFA/rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 02:58:38
+Attack Type     : HIGH REQUEST RATE
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 24
+Severity        : MEDIUM
+Recommended     : Investigate request frequency and apply rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:18:26
+Attack Type     : BRUTE FORCE
+Source IP       : 127.0.0.1
+Username        : admin
+Failed Attempts : 13
+Severity        : HIGH
+Recommended     : Investigate source IP and consider account/IP rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:18:26
+Attack Type     : PASSWORD SPRAY
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 6
+Severity        : HIGH
+Recommended     : Investigate targeted accounts and consider MFA/rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:18:26
+Attack Type     : HIGH REQUEST RATE
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 24
+Severity        : MEDIUM
+Recommended     : Investigate request frequency and apply rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:21:19
+Attack Type     : BRUTE FORCE
+Source IP       : 127.0.0.1
+Username        : admin
+Failed Attempts : 23
+Severity        : HIGH
+Recommended     : Investigate source IP and consider account/IP rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:21:19
+Attack Type     : PASSWORD SPRAY
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 6
+Severity        : HIGH
+Recommended     : Investigate targeted accounts and consider MFA/rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:21:19
+Attack Type     : HIGH REQUEST RATE
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 34
+Severity        : MEDIUM
+Recommended     : Investigate request frequency and apply rate limiting.
+============================================================

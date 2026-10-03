@@ -1,0 +1,72 @@
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:34:13
+Attack Type     : BRUTE FORCE
+Source IP       : 127.0.0.1
+Username        : admin
+Failed Attempts : 13
+Severity        : HIGH
+Recommended     : Investigate source IP and consider account/IP rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:34:13
+Attack Type     : PASSWORD SPRAY
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 5
+Severity        : HIGH
+Recommended     : Investigate targeted accounts and consider MFA/rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:34:13
+Attack Type     : HIGH REQUEST RATE
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 23
+Severity        : MEDIUM
+Recommended     : Investigate request frequency and apply rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:37:52
+Attack Type     : BRUTE FORCE
+Source IP       : 127.0.0.1
+Username        : admin
+Failed Attempts : 13
+Severity        : HIGH
+Recommended     : Investigate source IP and consider account/IP rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:37:52
+Attack Type     : PASSWORD SPRAY
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 5
+Severity        : HIGH
+Recommended     : Investigate targeted accounts and consider MFA/rate limiting.
+============================================================
+
+============================================================
+SECURITY ALERT
+============================================================
+Timestamp       : 2026-09-27 03:37:52
+Attack Type     : HIGH REQUEST RATE
+Source IP       : 127.0.0.1
+Username        : MULTIPLE
+Failed Attempts : 23
+Severity        : MEDIUM
+Recommended     : Investigate request frequency and apply rate limiting.
+============================================================

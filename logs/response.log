@@ -1,0 +1,4 @@
+2026-09-27 03:35:53 | username=admin | source_ip=127.0.0.1 | failed_attempts=10 | ACTION=ACCOUNT_TEMPORARILY_LOCKED
+2026-09-27 03:35:53 | username=MULTIPLE | source_ip=127.0.0.1 | failed_attempts=10 | ACTION=IP_RATE_LIMIT_APPLIED
+2026-09-27 03:37:52 | username=admin | source_ip=127.0.0.1 | failed_attempts=10 | ACTION=ACCOUNT_TEMPORARILY_LOCKED
+2026-09-27 03:37:52 | username=MULTIPLE | source_ip=127.0.0.1 | failed_attempts=10 | ACTION=IP_RATE_LIMIT_APPLIED
