@@ -581,18 +581,18 @@ def generate_campaign_report(campaign_id):
 # Main Campaign Execution
 # ============================================================
 
-def main():
+def run_campaign(profile_name):
+    """
+    Run one complete purple-team campaign.
+    """
 
     print()
     print("=" * 70)
-    print("             PURPLE TEAM CAMPAIGN")
+    print(f"              RUNNING: {profile_name}")
     print("=" * 70)
 
-    profile_name = "mfa_fatigue"
-
-    print(
-        f"[+] Loading profile: {profile_name}"
-    )
+    print()
+    print(f"[+] Loading profile: {profile_name}")
 
     profile = load_profile(profile_name)
 
@@ -658,7 +658,129 @@ def main():
     )
 
     print()
-    print("[+] Purple Team Campaign completed successfully.")
+    print(
+        f"[+] Campaign {campaign_id} "
+        f"completed successfully."
+    )
+
+    return campaign_id
+
+
+# ============================================================
+# Interactive Campaign Menu
+# ============================================================
+
+def main():
+
+    print()
+    print("=" * 70)
+    print("             PURPLE TEAM CAMPAIGN")
+    print("=" * 70)
+
+    print()
+    print("Available attack profiles:")
+    print()
+    print("1. brute_force")
+    print("2. password_spray")
+    print("3. credential_stuffing")
+    print("4. mfa_fatigue")
+    print("5. all")
+    print()
+
+    choice = input("Select attack: ").strip()
+
+    attack_profiles = {
+        "1": "brute_force",
+        "2": "low_slow_spray",
+        "3": "credential_stuffing",
+        "4": "mfa_fatigue"
+    }
+
+    # --------------------------------------------------------
+    # Run selected attack
+    # --------------------------------------------------------
+
+    if choice in attack_profiles:
+
+        profile_name = attack_profiles[choice]
+
+        run_campaign(
+            profile_name
+        )
+
+    # --------------------------------------------------------
+    # Run all attacks
+    # --------------------------------------------------------
+
+    elif choice == "5":
+
+        all_profiles = [
+            "brute_force",
+            "low_slow_spray",
+            "credential_stuffing",
+            "mfa_fatigue"
+        ]
+
+        print()
+        print("=" * 70)
+        print("             RUNNING ALL ATTACKS")
+        print("=" * 70)
+
+        campaign_ids = []
+
+        for profile_name in all_profiles:
+
+            campaign_id = run_campaign(
+                profile_name
+            )
+
+            campaign_ids.append(
+                campaign_id
+            )
+
+            print()
+            print("=" * 70)
+            print(
+                f"[+] Finished: {profile_name}"
+            )
+            print(
+                f"[+] Campaign ID: {campaign_id}"
+            )
+            print("=" * 70)
+
+            time.sleep(2)
+
+        print()
+        print("=" * 70)
+        print("             ALL CAMPAIGNS COMPLETED")
+        print("=" * 70)
+
+        print()
+        print("Campaign IDs:")
+
+        for campaign_id in campaign_ids:
+            print(
+                f"  - {campaign_id}"
+            )
+
+        print()
+        print("=" * 70)
+
+    # --------------------------------------------------------
+    # Invalid option
+    # --------------------------------------------------------
+
+    else:
+
+        print()
+        print(
+            "[!] Invalid selection."
+        )
+
+        print(
+            "[!] Please choose an option "
+            "from 1 to 5."
+        )
 
 
 # ============================================================
