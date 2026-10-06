@@ -16,11 +16,13 @@ venv/
 
 # Logs
 logs/*.log
+logs/*.jsonl
 logs/old/
 
 # Backup files
 *.save
 *.bak
+*.backup
 
 # IDE
 .vscode/

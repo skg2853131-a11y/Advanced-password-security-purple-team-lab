@@ -1,0 +1,34 @@
+{
+    "name": "mfa_fatigue",
+    "description": "Controlled MFA fatigue and push-jamming simulation using a synthetic MFA provider",
+    "attack_type": "mfa_fatigue",
+    "mitre_attack": {
+        "technique": "T1621",
+        "tactic": "Credential Access"
+    },
+    "parameters": {
+        "target_users": [
+            "alice",
+            "bob",
+            "charlie",
+            "admin"
+        ],
+        "push_requests_per_user": 5,
+        "jitter_min_seconds": 0.3,
+        "jitter_max_seconds": 0.8,
+        "synthetic_sources": [
+            "10.10.10.51",
+            "10.10.10.73",
+            "10.10.10.94",
+            "10.10.10.121"
+        ],
+        "provider": "MOCK_MFA_PROVIDER"
+    },
+    "expected_defenses": [
+        "behavioral_detection",
+        "risk_scoring",
+        "mitre_attack_mapping",
+        "adaptive_soar",
+        "campaign_correlation"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "low_slow_password_spray",
+    "description": "Low-and-slow password spraying simulation against the local purple-team lab",
+    "attack_type": "password_spray",
+    "mitre_attack": {
+        "technique": "T1110.003",
+        "tactic": "Credential Access"
+    },
+    "parameters": {
+        "target_users": [
+            "alice",
+            "bob",
+            "charlie",
+            "admin"
+        ],
+        "attempts_per_user": 1,
+        "jitter_min_seconds": 2,
+        "jitter_max_seconds": 5
+    },
+    "expected_defenses": [
+        "behavioral_detection",
+        "risk_scoring",
+        "adaptive_soar"
+    ]
+}

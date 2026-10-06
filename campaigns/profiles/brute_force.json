@@ -1,0 +1,32 @@
+{
+    "name": "brute_force",
+    "description": "Controlled brute-force authentication simulation against the local purple-team lab",
+    "attack_type": "brute_force",
+    "mitre_attack": {
+        "technique": "T1110.001",
+        "tactic": "Credential Access"
+    },
+    "parameters": {
+        "target_user": "admin",
+        "passwords": [
+            "password",
+            "123456",
+            "admin123",
+            "Password1",
+            "Welcome1",
+            "letmein",
+            "qwerty",
+            "test123",
+            "incorrect1",
+            "wrongpassword"
+        ],
+        "source_ip": "10.10.10.51",
+        "delay_seconds": 1
+    },
+    "expected_defenses": [
+        "behavioral_detection",
+        "risk_scoring",
+        "adaptive_soar",
+        "account_protection"
+    ]
+}
